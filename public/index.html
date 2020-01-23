@@ -15,16 +15,28 @@
       <img src="./img/logo.png" alt="logo" class="logo" />
 
       <div class="card welcome">
-        <p>
+        <p id="welcome_text">
           ¡Bienvenid@! Esperamos que disfrute navegando en internet y le
           deseamos una agradable estancia en nuestras instalaciones.
         </p>
       </div>
 
       <form action="/auth" method="POST" class="card form">
-        <h1>Acceso de Invitado</h1>
-        <input type="submit" value="Conectar" class="btn" />
+        <h1 id="title">Acceso de Invitado</h1>
+        <input id="submit" type="submit" value="Conectar" class="btn" />
       </form>
+
+      <div class="flags">
+        <button class="flag_btn" onclick="toSpanish()">
+          <img src="./img/mx.svg" alt="mexico flag" class="flag" />
+        </button>
+
+        <button class="flag_btn" onclick="toEnglish()">
+          <img src="./img/us.svg" alt="usa flag" class="flag" />
+        </button>
+      </div>
     </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
