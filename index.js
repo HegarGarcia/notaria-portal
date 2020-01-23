@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-app.use(`/guest/s/${process.env.SITENAME}/`, express.static("public"));
+app.use(`/guest/s/`, express.static("public"));
 
 app.use(`/guest/s/${process.env.SITENAME}/`, require("./routes/public"));
 app.use("/auth", require("./routes/auth"));
