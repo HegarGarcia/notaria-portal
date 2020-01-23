@@ -24,7 +24,7 @@ authRouter.post("/", async (req, res) => {
       headers,
       body: JSON.stringify({
         cmd: "authorize-guest",
-        mac: req.headers["x-real-ip"]
+        mac: req.session.id
       })
     });
 
